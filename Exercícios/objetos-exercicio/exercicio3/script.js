@@ -29,27 +29,25 @@ pokemon1.ataques.push(ataque);
 
 //Letra d)
 
-pokemon2.ataques = [];
-
-pokemon2.ataques.push(ataque);
+pokemon2.ataques = [...pokemon1.ataques];
 
 // Letra e)
 
-pokemon1.ataques[1] = {
+pokemon1.ataques.push({
   nome: "Folha Navalha",
   dano: 45,
   tipo: "Grama",
   precisao: 100,
-};
+});
 
 // Letra f)
 
-pokemon2.ataques[1] = {
+pokemon2.ataques.push({
   nome: "Jato de Água",
   dano: 40,
   tipo: "Água",
   precisao: 100,
-};
+});
 
 // Letra g)
 

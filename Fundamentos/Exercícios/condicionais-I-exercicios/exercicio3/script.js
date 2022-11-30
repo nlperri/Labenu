@@ -31,6 +31,6 @@ function progNac(nacionalidade) {
   }
 }
 
-console.log(progNac(nacionalidade));
+progNac(nacionalidade);
 
 /////////////////////////////////////////////////////////

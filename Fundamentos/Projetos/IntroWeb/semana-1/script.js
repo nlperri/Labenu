@@ -1,28 +1,50 @@
-const music1 = "Cardigan";
-const artist1 = "Taylor Swift";
-const album1 = "Folklore";
-const dur1 = 3.59;
-const genre1 = "Folk-pop";
-const save1 = false;
+const music1 = {
+  nome: "Cardigan",
+  artist: "Taylor Swift",
+  album: "Folklore",
+  dur: 3.59,
+  genre: "Folk-pop",
+  saved: false,
+};
 
-const music2 = "Scott Street";
-const artist2 = "Phoebe Bridgers";
-const album2 = "Stranger in the Alps";
-const dur2 = 5.05;
-const genre2 = "Indie-folk";
-const save2 = true;
+const music2 = {
+  nome: "Scott Street",
+  artist: "Phoebe Bridgers",
+  album: "Stranger in the Alps",
+  dur: 5.05,
+  genre: "Indie-folk",
+  saved: true,
+};
 
-const music3 = "Everything in Its Right Place";
-const artist3 = "Radiohead";
-const album3 = "Kid A";
-const dur3 = 4.11;
-const genre3 = "Alternative Rock";
-const save3 = true;
+const music3 = {
+  nome: "Everything in Its Right Place",
+  artist: "Radiohead",
+  album: "Kid A",
+  dur: 4.11,
+  genre: "Alternative Rock",
+  saved: true,
+};
 
-const media = (dur1 + dur2 + dur3) / 3;
+const saved = [];
+
+function isSaved(music) {
+  if (music.saved == true) {
+    saved.push(music);
+  } else {
+    console.log(`A música ${music.nome} não está salva 🎼💔`); ////////inserir alert
+  }
+}
+
+isSaved(music1);
+isSaved(music2);
+isSaved(music3);
+
+const media = (music1.dur + music2.dur + music3.dur) / 3;
 
 console.log(
-  `\nA média de minutos de músicas ouvidas hoje foi de ${media.toFixed(2)}\n`
+  `\nA média de minutos de músicas ouvidas hoje foi de ${media.toFixed(
+    2
+  )} 🎧🎶\n`
 );
 
 const favArtists = [
@@ -33,16 +55,15 @@ const favArtists = [
   "Radiohead",
 ];
 
-function data(music, artist, album, dur, genre, save) {
-  const info = [music, artist, album, dur, genre, save];
-  return info;
-}
+console.log(`\n🔊⏯️ This is your recently played songs 🔊⏯️ \n`);
+console.table(music1);
 
-console.table(data(music1.toUpperCase(), artist1, album1, dur1, genre1, save1));
+console.table(music2);
 
-console.table(data(music2.toUpperCase(), artist2, album2, dur2, genre2, save2));
+console.table(music3);
 
-console.table(data(music3.toUpperCase(), artist3, album3, dur3, genre3, save3));
-
-console.log(`\n-----This is your top favorite artists from last month:-----\n`);
+console.log(`\n🌟🎵 This is your top favorite artists from last month 🎵🌟\n`);
 console.table(favArtists);
+
+console.log(`\n💖🎵 This is your saved songs 🎵💖\n`);
+console.table(saved);

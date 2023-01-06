@@ -4,94 +4,151 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code Player</title>
-    <script src="script.js"></script>
-    <link href="./style.css" rel="stylesheet" />
+    <title>Codeplayer</title>
+    <link rel="stylesheet" href="./style.css" class="" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@300;500;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
   </head>
   <body>
-    <header><div id="title">/code player></div></header>
-    <main>
-      <div class="search-box">
-        <form>
-          <label for="search"></label>
-          <input type="text" placeholder="Search.." name="search" />
-          <button type="submit"></button>
-        </form>
-      </div>
+    <div id="container">
+      <main>
+        <aside>
+          <div class="aside-menu">
+            <div class="codeplayer">
+              <span class="material-symbols-outlined"> code </span>
+              <span>Codeplayer</span>
+            </div>
+            <div class="home-menu">
+              <span class="material-symbols-outlined"> home </span>
+              <span>Início</span>
+            </div>
+            <div class="search-menu">
+              <span class="material-symbols-outlined"> search </span>
+              <span>Buscar</span>
+            </div>
+            <div class="library-menu">
+              <span class="material-symbols-outlined"> library_music </span>
+              <span>Biblioteca</span>
+            </div>
 
-      <section>
-        <ul>
-          <li class="music-name">
-            <strong
-              ><a
-                href="https://open.spotify.com/track/4R2kfaDFhslZEMJqAFNpdd"
-                target="_blank"
-                class="music-link"
-                >/Cardigan></a
-              ></strong
-            >
-          </li>
-          <li class="img"><img src="./assets/folklore.png" /></li>
-          <li>{artist: "Taylor Swift",</li>
-          <li>album: "Folklore",</li>
-          <li>dur: 3.59</li>
-          <li>genre: "Folk-pop"</li>
-          <li>saved: false</li>
-          <li>
-            relatedArtists: ["Gracie Abrams", "Olivia Rodrigo", "Lizzie
-            McAlpine"],}
-          </li>
-        </ul>
-      </section>
-      <section>
-        <ul>
-          <li class="music-name">
-            <strong
-              ><a
-                href="https://open.spotify.com/track/0jqFM7E9z1PLYtPVCuFwAi"
-                target="_blank"
-                class="music-link"
-                >/Scott Street></a
-              ></strong
-            >
-          </li>
-          <li class="img"><img src="./assets/stranger.jpg" /></li>
-          <li>{artist: "Phoebe Bridgers",</li>
-          <li>album: "Stranger in the Alps",</li>
-          <li>dur: 5.05</li>
-          <li>genre: "Indie-folk"</li>
-          <li>saved: true</li>
-          <li>relatedArtists: ["Boygenius", "Big Thief", "Angel Olsen"],}</li>
-        </ul>
-      </section>
-      <section>
-        <ul>
-          <li class="music-name">
-            <strong
-              ><a
-                href="https://open.spotify.com/track/2kRFrWaLWiKq48YYVdGcm8"
-                target="_blank"
-                class="music-link"
-                >/Everything in Its Right Place></a
-              ></strong
-            >
-          </li>
-          <li class="img"><img src="./assets/kida.png" /></li>
-          <li>{artist: "Radiohead",</li>
-          <li>album: "Kid A",</li>
-          <li>dur: 4.11</li>
-          <li>genre: "Alternative Rock"</li>
-          <li>saved: true</li>
-          <li>relatedArtists: ["Alt-J", "Bon Iver", "Arcade Fire"],}</li>
-        </ul>
-      </section>
-    </main>
-    <footer>copyright © 2022 . all rights reserved</footer>
+            <div class="create-menu">
+              <span class="material-symbols-outlined"> add_circle </span>
+              <span>Criar playlist</span>
+            </div>
+            <div class="favorite-menu">
+              <span class="material-symbols-outlined"> favorite </span>
+              <span>Músicas curtidas</span>
+            </div>
+          </div>
+          <div class="aside-playlist">
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+            <p>Playlist</p>
+          </div>
+          <div class="install-app">
+            <span class="material-symbols-outlined"> download </span>
+            <span>Instalar aplicativo</span>
+          </div>
+        </aside>
+        <section class="top-section">
+          <div class="header-section">
+            <div class="arrow-header">
+              <span class="material-symbols-outlined">
+                arrow_back_ios_new
+              </span>
+              <span class="material-symbols-outlined"> arrow_forward_ios </span>
+            </div>
+            <div class="profile-header">
+              <img src="./assets/profile-pic.jpg" />
+              <span>Natália Perri</span>
+              <span class="material-symbols-outlined"> arrow_drop_down </span>
+            </div>
+          </div>
+        </section>
+        <section class="lastest-albums">
+          <h1 style="font-size: 32px">Boa tarde</h1>
+          <div class="album-1">
+            <img src="./assets/folklore.png" />
+            <span>Folklore</span>
+          </div>
+          <div class="album-2">
+            <img src="./assets/stranger.jpg" />
+            <span>Stranger in the Alps</span>
+          </div>
+          <div class="album-3">
+            <img src="./assets/kida.png" />
+            <span>Kid A</span>
+          </div>
+          <div class="album-4">
+            <img src="./assets/immunity.jpg" />
+            <span>Immunity</span>
+          </div>
+          <div class="album-5">
+            <img src="./assets/minor.jpg" />
+            <span>minor</span>
+          </div>
+          <div class="album-6">
+            <img src="./assets/five-seconds.png" />
+            <span>five seconds flat</span>
+          </div>
+        </section>
+        <section class="recomended-today">
+          <div class="recomended-header">
+            <h1 style="font-size: 22px">Recomendado para hoje</h1>
+            <p style="font-size: 14px; color: #b2b2b2">MOSTRAR TUDO</p>
+          </div>
+          <div class="recomended-1">
+            <img src="./assets/dont-smile.png" />
+            <p>dont smile at me</p>
+            <p style="font-size: 14px; color: #b2b2b2">Billie Eilish</p>
+          </div>
+          <div class="recomended-2">
+            <img src="./assets/evermore.png" />
+            <p>Evermore</p>
+            <p style="font-size: 14px; color: #b2b2b2">Taylor Swift</p>
+          </div>
+          <div class="recomended-3">
+            <img src="./assets/feels-like.jpg" />
+            <p>This Is What It Feels Like</p>
+            <p style="font-size: 14px; color: #b2b2b2">Gracie Abrams</p>
+          </div>
+          <div class="recomended-4">
+            <img src="./assets/punisher.png" />
+            <p>Punisher</p>
+            <p style="font-size: 14px; color: #b2b2b2">Phoebe Bridgers</p>
+          </div>
+          <div class="recomended-5">
+            <img src="./assets/sling.png" />
+            <p>Sling</p>
+            <p style="font-size: 14px; color: #b2b2b2">Clairo</p>
+          </div>
+        </section>
+      </main>
+      <footer></footer>
+    </div>
   </body>
 </html>
